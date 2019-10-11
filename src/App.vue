@@ -1,28 +1,44 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>Mobile Card Slider</h1>
+    <CardList />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  import CardList from './components/CardList'
 
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
+  export default {
+    components: {
+      CardList
+    }
+  };
 </script>
 
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  * {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 2rem;
+    padding-left: 40px;
+  }
+
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma;
+    background-color: #333;
+    color: #fff;
+  }
+
+  #app {
+    position: relative;
+    padding: 20px 0;
+    overflow: hidden;
+  }
 </style>
